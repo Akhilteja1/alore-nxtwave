@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import data from "@emoji-mart/data";
 import Picker from "@emoji-mart/react";
+import Sidebar from './components/Sidebar';
 
 
 const App = () => {
@@ -18,17 +19,21 @@ const App = () => {
    
 
   return (
-    <div>
-      <button onClick={()=>setShowEmoji(!showEmoji)}>
-        add emoji
-      </button>
-      {showEmoji && (
-        <Picker data ={data} onEmojiSelect={addEmoji}  />)
-        }
-      <br/>
-      <p >{textValue}</p>
-       
-    </div>
+    <>
+      <Sidebar />
+      <div>
+        <button onClick={()=>setShowEmoji(!showEmoji)}>
+          add emoji
+        </button>
+        {showEmoji && (
+          <Picker data ={data} onEmojiSelect={addEmoji}  />)
+          }
+        <br/>
+        <p >{textValue}</p>
+        
+      </div>
+    </>
+
   );
 };
 export default App
