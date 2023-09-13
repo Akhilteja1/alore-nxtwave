@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import data from "@emoji-mart/data";
 import Picker from "@emoji-mart/react";
 import Sidebar from './components/Sidebar';
+import "./App.css"
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
 
   return (
     <>
+    <h1 className='App-header'>Alore-Nxtwave Assignment</h1>
       <Sidebar />
       <div>
         <button onClick={()=>setShowEmoji(!showEmoji)}>
@@ -29,9 +31,11 @@ const App = () => {
           <Picker data ={data} onEmojiSelect={addEmoji}  />)
           }
         <br/>
-        <p >{textValue}</p>
+        <h3 className='displayEmoji'>{textValue}</h3>
         
       </div>
+
+      <button className='button1'>+</button>
     </>
 
   );

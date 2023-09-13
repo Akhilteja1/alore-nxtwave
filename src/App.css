@@ -9,7 +9,8 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 30vh;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,4 +29,25 @@
 
 .small {
   font-size: 0.75rem;
+}
+
+.displayEmoji{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #282c34;
+
+}
+.button1 {
+  background-color: white;
+  color: black;
+  border: 1px solid #4CAF50; /* Green */
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 40px;
 }

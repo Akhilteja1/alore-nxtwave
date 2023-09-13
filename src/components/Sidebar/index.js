@@ -6,8 +6,9 @@ import './index.css'
 const Sidebar = () => {
 
     const [showModal, setShowModal] = useState(false);
+     
+     
 
- 
 
 
     return(
@@ -16,13 +17,13 @@ const Sidebar = () => {
         {showModal && <div className="show-modal">
         <div className="modal-content">
             <span className="close-button">×</span>
-            <form id="myForm">
+            <form id="myForm"  >
                 <h1>Add a segment</h1>
                 <div className="mb-3">
                     <br/>
                     <label for="name">Name</label>
                     <br />
-                    <input type="text" className="form-control" id="name" />
+                    <input type="text" className="form-control" id="name"   />
                      
                 </div>
 
@@ -43,9 +44,11 @@ const Sidebar = () => {
                     <p id="nameErrMsg" className="error-message"></p>
                 </div>
 
-                <button className="btn btn-primary m-5">Save</button>
+                <button className="btn btn-primary m-5" type="submit">Save</button>
                 <button className="btn btn-primary m-5">Cancel</button>
             </form>
+
+             
         </div>
     
     </div>
